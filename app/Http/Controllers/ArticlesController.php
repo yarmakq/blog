@@ -4,12 +4,29 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use App\Models\Category;
-use App\Models\ImageArticle;
-use App\Models\View;
+use App\Services\ArticleServices;
+use App\Services\DownloadImageServices;
 use Illuminate\Http\Request;
 
 class ArticlesController extends Controller
 {
+    private $articleServices;
+    private $downloadImageService;
+
+    /**
+     * ArticlesController constructor.
+     * @param ArticleServices $articleServices
+     * @param $downloadImageService
+     */
+    public function __construct(
+        ArticleServices $articleServices,
+        DownloadImageServices $downloadImageService
+    )
+    {
+        $this->articleServices = $articleServices;
+        $this->downloadImageService = $downloadImageService;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -51,23 +68,10 @@ class ArticlesController extends Controller
      */
     public function store(Request $request)
     {
+        $result = $this->articleServices->handle($request);
 
-        $article = new Article();
-        $image = new ImageArticle();
-
-
-        $article->user_id = \Auth::user()->id;
-        $article->title = $request->title;
-        $article->little_description = $request->little_description;
-        $article->description = $request->description;
-        $article->category_id = $request->category_id;
-
-
-        $article->save();
-
-        $image->article_id = $article->id;
-        $image->image = $request->image;
-        $image->save();
+        if (!$result)
+            return back();
 
         return redirect()->route('articles.index');
     }

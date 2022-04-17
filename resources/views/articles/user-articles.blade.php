@@ -5,7 +5,7 @@
 @section('content')
 
     <div class="content-box-holst">
-    @foreach($articles as $article)
+        @foreach($articles as $article)
             <div class="content-box-item">
                 <div class="content-box-item-header">
                     <div class="content-box-item-header-avatar">
@@ -24,8 +24,6 @@
                                     Редактировать
                                 </button>
                             </a>
-
-
                             <form action="{{ route('articles.destroy', $article->id) }}" method="post">
                                 @csrf
                                 @method('delete')
@@ -40,7 +38,8 @@
                 <div class="content-box-item-categories">
                     Категория: {{ optional($article->category)->name_category }}
                 </div>
-                <div class="content-box-item-image" style="background: url({{ asset('images/' . optional($article->image)->image) }})0 0/cover no-repeat;">
+                <div class="content-box-item-image"
+                     style="background: url({{ asset('images/' . optional($article->image)->image) }})0 0/cover no-repeat;">
                     <img id="content-box-item-image-img" src="" alt="">
                 </div>
                 <div class="content-box-item-content">

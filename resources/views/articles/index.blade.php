@@ -25,7 +25,7 @@
                     Категория: {{ $article->category->name_category }}
                 </div>
 
-                <div class="content-box-item-image" style="background: url({{ asset('images/' . optional($article->image)->image) }})0 0/cover no-repeat;">
+                <div class="content-box-item-image" style="background: url({{ asset(optional($article->image)->image) }})0 0/cover no-repeat;">
                     <img id="content-box-item-image-img" src="" alt="">
                 </div>
                 <div class="content-box-item-content">
@@ -62,20 +62,4 @@
             </div>
         @endforeach
     </div>
-
-
-
-
-{{--                            <a href="{{ route('articles.show', $article->id) }}">--}}
-{{--                                Редактировать--}}
-{{--                            </a>--}}
-{{--                     --}}
-
-{{--                            <form action="{{ route('articles.destroy', $article->id) }}" method="post">--}}
-{{--                                @csrf--}}
-{{--                                @method('delete')--}}
-{{--                                <input type="submit" value="Удалить">--}}
-{{--                            </form>--}}
-
-
 @endsection
