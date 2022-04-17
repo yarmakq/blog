@@ -11,7 +11,7 @@ class ArticleServices
 {
     public function handle($request)
     {
-        $article = $this->crateArticle($request);
+        $article = $this->createArticle($request);
 
         if ($article) {
             $newImage = $request->image;
@@ -24,7 +24,7 @@ class ArticleServices
         return true;
     }
 
-    private function crateArticle($request)
+    private function createArticle($request)
     {
         $article = new Article();
 
@@ -38,6 +38,8 @@ class ArticleServices
 
         if (isset($article->id))
             return $article;
+
+        return null;
     }
 
     private function addImage($article, $request)

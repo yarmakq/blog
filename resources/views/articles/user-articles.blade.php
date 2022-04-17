@@ -39,7 +39,7 @@
                     Категория: {{ optional($article->category)->name_category }}
                 </div>
                 <div class="content-box-item-image"
-                     style="background: url({{ asset('images/' . optional($article->image)->image) }})0 0/cover no-repeat;">
+                     style="background: url({{ asset(optional($article->image)->image) }})0 0/cover no-repeat;">
                     <img id="content-box-item-image-img" src="" alt="">
                 </div>
                 <div class="content-box-item-content">
@@ -71,7 +71,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         @endforeach
     </div>
