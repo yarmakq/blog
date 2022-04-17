@@ -1,0 +1,9 @@
+.container-show-content{
+    width: 100%;
+    max-width: 1024px;
+    margin: 25px auto;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    padding-left: 10px;
+    padding-right: 10px;
+}

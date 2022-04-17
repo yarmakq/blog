@@ -1,0 +1,29 @@
+.container-add-articles{
+    margin: 25px auto;
+    width: 100%;
+    max-width: 1120px;
+    height: auto;
+}
+.container-add-articles-form{
+    width: 100%;
+    max-width: 615px;
+    margin: 5px auto;
+}
+.container-add-articles-form textarea{
+    width: 100%;
+    font-size: 16px;
+    resize: none;
+}
+.container-add-articles-form select{
+    width: 100%;
+    font-size: 16px;
+}
+.container-add-articles-form input{
+    width: 100%;
+    font-size: 16px;
+    max-width: 240px;
+}
+.container-add-articles-form-submit{
+    text-align: center;
+    margin-top: 25px;
+}

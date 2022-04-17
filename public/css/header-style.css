@@ -1,0 +1,25 @@
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #FFFAFA;
+}
+.header-menu{
+    margin-left: 75px;
+    float: left;
+    margin-top: 21px;
+}
+.header-menu a{
+    text-decoration: none;
+    margin-right: 5px;
+    color: black;
+}
+.header-auth{
+    margin-top: 21px;
+    float: right;
+    margin-right: 75px;
+}
+.header-auth a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: black;
+}

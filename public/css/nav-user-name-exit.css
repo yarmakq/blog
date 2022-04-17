@@ -1,0 +1,88 @@
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #FFFAFA;
+    border-bottom: 1px solid #ff0000;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    opacity: 0.9;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content form{
+    width: 100%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#dropdown-content-presonal-area{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: 0;
+    width: 100%;
+    min-width: 160px;
+}
+#dropdown-content-logout{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: 0;
+    width: 100%;
+    min-width: 160px;
+}
+
+.dropdown-content button:hover {
+    opacity: 0.5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.content-box-item-header-delete-store{
+    width: 100%;
+    text-align: right;
+}
+.content-box-item-header-delete-store-container{
+    display: inline-flex;
+}
+.content-box-item-header-delete-store-container button{
+    margin-left: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFD0D0;
+    background-color: white;
+    border: 0;
+    top: -5px;
+    cursor: pointer;
+}
+.content-box-item-header-delete-store-container form{
+    margin-left: 15px;
+}
+.content-box-item-header-delete-store-container form input{
+    margin-left: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFD0D0;
+    background-color: white;
+    border: 0;
+    top: -5px;
+    cursor: pointer;
+}

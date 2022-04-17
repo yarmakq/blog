@@ -1,0 +1,119 @@
+.content-box-holst{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px auto;
+    max-width: 1400px;
+    width: 100%;
+    height: auto;
+}
+.content-box-item{
+    margin-bottom: 15px;
+    margin-left: 35px;
+    width: 658px;
+    height: 100%;
+    background: #FFFFFF;
+    border: 0.4px solid #EEEEEE;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.content-box-item-header{
+    display: inline-flex;
+    width: 100%;
+    max-width: 631px;
+
+    margin: 5px auto;
+    margin-left: 5px;
+    align-items: center;
+}
+.content-box-item-header-author{
+    margin-left: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+}
+.content-box-item-header-created_at{
+    margin-left: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFD0D0;
+}
+.content-box-item-title{
+    width: 100%;
+    max-width: 631px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 auto;
+    color: #000000;
+}
+.content-box-item-categories{
+    width: 100%;
+    max-width: 631px;
+    margin: 5px auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: crimson;
+}
+.content-box-item-image{
+    width: 100%;
+    max-width: 631px;
+    height: 289px;
+    margin: 0 auto;
+}
+.content-box-item-content{
+    width: 631px;
+    margin: 25px auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+.content-box-item-about{
+    width: 631px;
+    margin: 10px auto;
+}
+.content-box-item-about-button{
+    float: left;
+    margin: 15px auto;
+}
+.content-box-item-about-view-comment{
+    display: inline-flex;
+    float: right;
+    margin: 15px auto;
+    height: 37px;
+}
+.content-box-item-about-view-comment div{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 2px;
+    opacity: 0.7;
+}
+#content-box-item-button-about{
+    width: 127px;
+    height: 37px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFD0D0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #A87474;
+}
+#content-box-item-button-about:hover{
+    opacity: 0.7;
+}
+
