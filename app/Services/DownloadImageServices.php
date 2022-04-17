@@ -11,7 +11,7 @@ class DownloadImageServices
 {
     public function handle(UploadedFile $image)
     {
-        $path = Storage::disk('local')->put('public', $image);
+        $path = Storage::disk('local')->put('public/images', $image);
 
         return $path ?? null;
     }
